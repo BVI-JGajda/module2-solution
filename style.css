@@ -1,0 +1,100 @@
+
+/* module2-solution */
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+h2 {
+	float: right;
+}
+
+p {
+	padding-top: 10px;
+	clear: right;
+}
+
+.text-one, .text-two, .text-three {
+	color: #444444;
+	border: solid 2px #444;
+	padding: 32px;
+	margin: 5px;
+	box-sizing: border-box;
+	float: left;
+	position:  relative;
+}
+
+.text-one {
+	background: #EEEEEE;
+}
+
+.text-two {
+	background: #DDDDDD;
+}
+
+.text-three {
+	background: #CCCCCC;
+}
+
+.text-one > h2 {
+	background: #00ffff;
+	padding:  10px;
+	margin-bottom: 2px;
+	border: solid 2px;
+	border-color: #444;
+}
+
+.text-two > h2 {
+	background: #ffff00;
+	padding:  10px;
+	margin-bottom: 2px;
+	border: solid 2px;
+	border-color: #444;
+}
+
+.text-three > h2 {
+	background: #ff00ff;
+	padding:  10px;
+	margin-bottom: 2px;
+	border: solid 2px;
+	border-color: #444;
+}
+
+/* responsive mobile */
+@media screen and (min-width: 0px) {
+	.text-one, .text-two, .text-three {
+		width:  90%;
+		height: 400px;
+	}
+}
+
+/*responsive tablet*/
+@media screen and (min-width:  769px) {
+	.text-one, .text-two {
+		width:  45%;
+		height: 400px;
+	}
+	.text-three {
+		width:  90%;
+		height: 300px;
+		float: center;
+	}
+}
+
+/*responsive desktop*/
+@media screen and (min-width:  992px) {
+	.text-one, .text-two, .text-three {
+		width:  30%;
+		height: 400px;
+	}
+}
